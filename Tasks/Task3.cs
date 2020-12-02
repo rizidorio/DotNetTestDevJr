@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Tasks
 {
@@ -10,7 +11,13 @@ namespace Tasks
          */
         public static int GetSum(List<int> list) 
         {
-            
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i] <= 0)
+                    list.Remove(list[i]);
+            }
+
+            return list.Sum();
         }
     }
 }
