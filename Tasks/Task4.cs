@@ -14,9 +14,7 @@ namespace Tasks
         {
             Repository repository = new Repository();
 
-            var list = repository.Students.FindAll(x => x.Birth.Year == DateTime.Now.Year);
-
-            return list;
+            return repository.Students.FindAll(x => x.Birth.Year == DateTime.Now.Year);
         }
     }
 }
