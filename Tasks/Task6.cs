@@ -36,9 +36,9 @@ namespace Tasks
                     zeroes++;
             }
 
-            string ratiosPositive = (Convert.ToDecimal(positive) / Convert.ToDecimal(numbers.Count)).ToString("0.00000");
-            string ratiosNegatives = (Convert.ToDecimal(negatives) / Convert.ToDecimal(numbers.Count)).ToString("0.00000");
-            string ratiosZeroes = (Convert.ToDecimal(zeroes) / Convert.ToDecimal(numbers.Count)).ToString("0.00000");
+            string ratiosPositive = (Convert.ToDecimal(positive) / Convert.ToDecimal(numbers.Count)).ToString("0.000000");
+            string ratiosNegatives = (Convert.ToDecimal(negatives) / Convert.ToDecimal(numbers.Count)).ToString("0.000000");
+            string ratiosZeroes = (Convert.ToDecimal(zeroes) / Convert.ToDecimal(numbers.Count)).ToString("0.000000");
 
             ratios.Add(decimal.Parse(ratiosPositive));
             ratios.Add(decimal.Parse(ratiosNegatives));

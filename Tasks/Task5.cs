@@ -9,11 +9,11 @@
         public static string GetEvenOrOdd(int number) 
         {
             if (number == 0)
-                return "Zero";
+                return "zero";
             else if (number % 2 == 0)
-                return "Par";
+                return "par";
             else
-                return "Ímpar";
+                return "impar";
         }
     }
 }

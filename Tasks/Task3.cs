@@ -11,13 +11,15 @@ namespace Tasks
          */
         public static int GetSum(List<int> list) 
         {
+            int sum = 0;
+
             for (int i = 0; i < list.Count; i++)
             {
-                if (list[i] <= 0)
-                    list.Remove(list[i]);
+                if (list[i] > 0)
+                    sum += list[i];
             }
 
-            return list.Sum();
+            return sum;
         }
     }
 }
